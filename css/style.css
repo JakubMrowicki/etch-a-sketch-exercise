@@ -5,16 +5,18 @@
 
 body {
   height: 100vh;
+  max-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .container {
-  max-height: 100vh;
+  max-height: 90vh;
   background-color: gray;
   display: flex;
   flex-grow: 1;
+  flex-shrink: 1;
   flex-flow: row wrap;
   aspect-ratio: 1/1;
 }
@@ -30,6 +32,16 @@ body {
 
 .hovered {
   background-color: black;
+}
+
+.controls {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 16px;
+  margin: 16px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media (max-aspect-ratio: 1/1) {
