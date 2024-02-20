@@ -11,8 +11,25 @@ body {
 }
 
 .container {
+  max-height: 100vh;
+  background-color: gray;
+  display: flex;
   flex-grow: 1;
+  flex-flow: row wrap;
   aspect-ratio: 1/1;
+}
+
+.square {
+  --square-width: 50%;
+  flex-basis: var(--square-width);
+  background-color: lightgray;
+  border: 1px solid gray;
+  aspect-ratio: 1/1;
+  box-sizing: border-box;
+}
+
+.hovered {
+  background-color: black;
 }
 
 @media (max-aspect-ratio: 1/1) {
