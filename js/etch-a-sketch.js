@@ -1,4 +1,4 @@
-const container = document.querySelector('.container')
+const CONTAINER = document.querySelector('.container')
 
 const addSquare = (parent, squareWidth) => {
   let square = document.createElement('div')
@@ -29,9 +29,9 @@ const setGridSize = (size, parent) => {
     addSquare(parent, squareWidth)
   }
 }
-setGridSize(16, container)
+setGridSize(16, CONTAINER)
 
 document.querySelector('#gridSlider').addEventListener('change', (e) => {
-  setGridSize(e.target.value, container)
+  setGridSize(e.target.value, CONTAINER)
   console.log(e.target.value)
 })
